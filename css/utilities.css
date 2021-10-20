@@ -1,0 +1,253 @@
+
+.section-title{
+      font-family: 'Rampart one', cursive;
+      position: relative;
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      padding-top: 4rem;
+      margin-bottom: 1rem;
+      text-align: center;
+}
+.section-title::after{
+      position: absolute;
+      content: "";
+      width: 70px;
+      height: .2rem;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      margin: auto;
+      background: coral;
+}
+.section__head{
+      font-size: 1.4rem;
+}
+section{
+      padding: 0 50px;
+}
+.container{
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 0 40px;
+      height: 100%;
+}
+
+.flex{
+      height: 100%;
+      /* width: 10
+      0%; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.grid{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+}
+.grid-1{
+      grid-template-columns: 1fr;
+}
+.work .grid{
+      grid-template-columns: repeat(4, 1fr);
+}
+div.flex{
+      justify-content: space-between;
+}
+ul{
+      list-style: none;
+}
+a{
+      text-decoration: none;
+      padding: 10px 20px;
+      text-transform: capitalize;
+      color: rgba(17, 17, 17, 0.811);
+      font-weight: 500;
+      font-size: 1.12rem;
+      letter-spacing: 1px;
+}
+.header a:hover{
+      font-weight: bold;
+      color: coral !important;
+}
+img{
+      width: 100%;
+      height: 100%;
+}
+/* BUTTONS */
+.btn{
+      width: 180px;
+      height: 70px;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-right: 20px;
+      position: relative;
+      z-index: 1;
+      outline: none;
+      transition: ease-out 0.7s;
+}
+.btn-1{
+      background-color: var(--primary-color);
+      box-shadow: inset 0 0 0 0 var(--primary-color);
+}
+.btn-1:hover{
+      box-shadow: inset 200px 0 0 0 coral;
+      /* color: var(--primary-color); */
+      color: #fff;
+}
+
+.btn-2{
+      border: 3px solid coral;
+      color: coral;
+}
+.btn-2:hover{
+      background: coral;
+      color: #fff;
+}
+
+.card{
+      border: none;
+      border-radius: 7px;
+      box-shadow: 5px 5px 30px var(--secondary-color);
+      padding: 20px;
+}
+
+/* margins */
+.my-1{
+      margin: 1rem 0;     
+}
+.my-2{
+      margin: 1.5rem 0;     
+}
+.my-3{
+      margin: 2rem 0;     
+}
+.my-4{
+      margin: 3rem 0;     
+}
+.my-5{
+      margin: 4rem 0;     
+}
+.mt-6{
+      margin-top: 8rem;     
+}
+
+.m-1{
+      margin: 1rem;     
+}
+.m-2{
+      margin: 1.5rem;     
+}
+.m-3{
+      margin: 2rem;     
+}
+.m-4{
+      margin: 3rem;     
+}
+.m-5{
+      margin: 4rem;     
+}
+/*paddings*/
+.py-1{
+      margin: 1rem 0;     
+}
+.py-2{
+      padding: 1.5rem 0;     
+}
+.py-3{
+      padding: 2rem 0;     
+}
+.py-4{
+      padding: 3rem 0;     
+}
+.py-5{
+      padding: 4rem 0;     
+}
+
+.p-1{
+      padding: 1rem;     
+}
+.p-2{
+      padding: 1.5rem;     
+}
+.p-3{
+      padding: 2rem;     
+}
+.p-4{
+      padding: 3rem;     
+}
+.p-5{
+      padding: 4rem;     
+}
+.px-4{
+      padding: 0 10rem;
+}
+/* ########## PRELOADER EFFECT ######### */
+#preloader{
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.loader{
+      position: relative;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: #2196f3;
+      box-shadow: inset 0 0 50px #000;
+      overflow: hidden;
+}
+.loader::before{
+      content: "";
+      position: absolute;
+      top: -150%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      border-radius: 40%;
+      background: #111;
+      opacity: 0.9;
+      animation: animate 8s infinite;
+}
+@keyframes animate {
+      0%{
+            transform: rotate(0deg);
+      }
+      100%{
+            transform: rotate(360deg);
+      }
+}
+.loader::after{
+      content: "";
+      position: absolute;
+      top: -150%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      border-radius: 40%;
+      background: #111;
+      opacity: 0.95;
+      animation: animate2 4s infinite;
+}
+@keyframes animate2 {
+      0%{
+            transform: rotate(360deg);
+      }
+      100%{
+            transform: rotate(0deg);
+      }
+}
