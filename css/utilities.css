@@ -17,7 +17,7 @@
       right: 0;
       bottom: -10px;
       margin: auto;
-      background: coral;
+      background: var(--ascent-color);
 }
 .section__head{
       font-size: 1.4rem;
@@ -52,8 +52,9 @@ section{
 }
 .grid-1{
       grid-template-columns: 1fr;
+      width: 70%;
 }
-.work .grid{
+.work .grid, .wedo .grid{
       grid-template-columns: repeat(4, 1fr);
 }
 div.flex{
@@ -66,14 +67,14 @@ a{
       text-decoration: none;
       padding: 10px 20px;
       text-transform: capitalize;
-      color: rgba(17, 17, 17, 0.811);
+      color: var(--color-1);
       font-weight: 500;
       font-size: 1.12rem;
       letter-spacing: 1px;
 }
 .header a:hover{
       font-weight: bold;
-      color: coral !important;
+      color: var(--ascent-color) !important;
 }
 img{
       width: 100%;
@@ -100,17 +101,17 @@ img{
       box-shadow: inset 0 0 0 0 var(--primary-color);
 }
 .btn-1:hover{
-      box-shadow: inset 200px 0 0 0 coral;
+      box-shadow: inset 200px 0 0 0 var(--ascent-color);
       /* color: var(--primary-color); */
       color: #fff;
 }
 
 .btn-2{
-      border: 3px solid coral;
-      color: coral;
+      border: 3px solid var(--ascent-color);
+      color: var(--ascent-color);
 }
 .btn-2:hover{
-      background: coral;
+      background: var(--ascent-color);
       color: #fff;
 }
 
@@ -119,6 +120,12 @@ img{
       border-radius: 7px;
       box-shadow: 5px 5px 30px var(--secondary-color);
       padding: 20px;
+}
+textarea{
+      height: 200px;
+}
+input, textarea{
+      color: var(--color-1);
 }
 
 /* margins */
@@ -138,7 +145,7 @@ img{
       margin: 4rem 0;     
 }
 .mt-6{
-      margin-top: 8rem;     
+      margin-top: 5rem;     
 }
 
 .m-1{
@@ -191,6 +198,16 @@ img{
 .px-4{
       padding: 0 10rem;
 }
+
+
+@media screen and (max-width: 768px) {
+      .px-4{
+            padding: 0 .5rem !important;
+      }
+      .btn-2{
+            margin-top: 20px;
+      }
+}
 /* ########## PRELOADER EFFECT ######### */
 #preloader{
       background: #111;
@@ -202,7 +219,7 @@ img{
       justify-content: center;
       align-items: center;
 }
-.loader{
+/* .loader{
       position: relative;
       width: 180px;
       height: 180px;
@@ -250,4 +267,4 @@ img{
       100%{
             transform: rotate(0deg);
       }
-}
+} */

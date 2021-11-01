@@ -59,10 +59,10 @@ const headerCallBk = function (entries) {
             }
       else  {
             document.querySelector('.header').classList.remove('sticky');
-            document.querySelector('.header').style.background = 'var(--light-color)';
-            $('.nav__toggle').css('color', '#000')
+            document.querySelector('.header').style.background = 'rgba(0, 0, 0, 0.619)';
+            $('.nav__toggle').css('color', '#fff')
             document.querySelectorAll('.header a').forEach(function (a) {
-                  a.style.color = '#000';
+                  a.style.color = '#fff';
               })
       }
 }
@@ -74,4 +74,75 @@ const headObserver = new IntersectionObserver(headerCallBk, {
 headObserver.observe(hero);
 
 // ############ JQUERY ############
-$('.icon-name').hide()
+
+
+
+$(document).ready(function () {
+
+            // #################### DARK MODE ###############
+      $('.mode').click(function (e) {
+            $('.mode').toggleClass('dark')
+            $('.mode').toggleClass('light')
+            $('.state_icon').toggleClass('fa-sun')
+            if (e.target.classList.contains('dark')) {
+                        document.documentElement.style.setProperty('--light-color', '#252d2f');
+                        document.documentElement.style.setProperty('--color', 'rgba(0, 0, 0, 0.899)');
+                        document.documentElement.style.setProperty('--hero-color', 'rgba(225, 225, 225)');
+                        document.documentElement.style.setProperty('--color-1', '#fff');
+                        document.documentElement.style.setProperty('--card-color', 'rgba(138, 136, 136, 0.1)');
+                        document.documentElement.style.setProperty('--color-3', '#030f12');
+                        document.documentElement.style.setProperty('--dark-color', 'rgba(0, 0, 0, 0.94)');
+                        document.getElementById('git').style.color = '#fff';
+                        document.querySelectorAll('.header a').forEach(function (a) {
+                              a.style.color = '#fff';
+                          })
+                  } else {
+                        document.documentElement.style.setProperty('--light-color', '#adc9d37b');
+                        document.documentElement.style.setProperty('--color', '#fff');
+                        document.documentElement.style.setProperty('--color-1', '#000');
+                        document.documentElement.style.setProperty('--card-color', 'rgba(14, 36, 49, 0.25)');
+                        document.documentElement.style.setProperty('--color-3', '#fff');
+                  document.documentElement.style.setProperty('--dark-color', '#011629');
+                  document.getElementById('git').style.color = '#000';
+                        document.documentElement.style.setProperty('--hero-color', 'rgba(2, 13, 28, 0.9)');
+                  }
+            })
+      // $('.preview')
+      const clicks = document.querySelectorAll('.preview');
+      clicks.forEach(function (value, index) {
+            value.addEventListener('click', function (e) {
+                  e.preventDefault();
+                        const xhr = new XMLHttpRequest();
+                        xhr.open('GET', `preview-${index}.html`, true);
+                        xhr.onload = function () {
+                              if (this.status == 200) {
+                                    let output = "";
+                                    output += this.responseText
+                                    $('.pre').html(`${output}`);
+                              } else if (this.status == 404) {
+                  setTimeout(function () {
+                                    $('.pre').html(`
+                                    <h1>404 😞 <span>page not found</span></h1>`).css({
+                                          display: 'flex',
+                                          justifyContent: 'center',
+                                          alignItems: 'center',
+                                          width: '100%',
+                                          height: '100%',
+                                          position: 'fixed',
+                                          top: '0',
+                                          left: '0',
+                                          background: '#fff',
+                                          zIndex: '200',
+                                          color: '#000',
+                                    }).animate({
+                                          letterSpacing: '2rem',
+                                    })
+                  }, 1000)
+                              }
+                        }
+                        // $('.pre').load(`preview-${index + 1}.html`);
+                        xhr.send();
+            });
+      })
+      
+})

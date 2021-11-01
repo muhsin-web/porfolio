@@ -6,20 +6,23 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Muhsin Portfolio</title>
       <!-- ######### LINKINGS -->
-      <link rel="shortcut icon" type="image" href="img/pngfind.com-abstract-shapes-png-2828709.png">
+      <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/utilities.css">
       <link rel="stylesheet" href="FortAwesome-Font-Awesome-7d3d774/css/all.min.css">
       <script src="typed.js-master/lib/typed.min.js"></script>
-      <script src="js/jquery.js"></script>
-      <!-- <script src="js/script.js"></script> -->
+      <link rel="stylesheet" href="css/slick.css">
+      <link rel="stylesheet" href="css/slick_theme.css">
 </head>
 
 <body>
 
       <!-- ########## PRELOADER ############# -->
       <div id="preloader">
-            <div class="loader "></div>
+            <div class="loader ">
+                  <img src="img/Eclipse-0.5s-211px.gif" alt="">
+            </div>
       </div>
 
      <!-- nav header -->
@@ -39,7 +42,7 @@
                   </ul>
             </div> 
             <div class="nav__toggle" id="nav-toggle">
-                  <i class="fa fa-list"></i>
+                  <i class='bx bx-menu'></i>
             </div>    
            </div>
      </header>
@@ -56,31 +59,22 @@
                        <button class="btn btn-2">Hire Me</button>
 
                        <div class="social_icons">
-                        <div class="social-icon">
-                              <a href="#"><i class="s1 fab fa-behance"  style="color: rgb(18, 99, 25);"></i></a>
-                              <span class="icon-name n1">Behance</span>
+                              <a href="#"><i class="s1 fab fa-behance fa-2x"  style="color: rgb(18, 99, 25);"></i></a>
+                              <a href="#"><i style="color: rgb(19, 150, 202);" class="s2 fab fa-twitter fa-2x"></i></a>
+                              <a href="#"><i class="s3 fab fa-github fa-2x" id="git" style="color: black;"></i></a>
                         </div>
-                        <div class="social-icon">
-                              <a href="#"><i style="color: rgb(19, 150, 202);" class="s2 fab fa-twitter"></i></a>
-                              <span class="icon-name n2">twitter</span>
-                        </div>
-                        <div class="social-icon" >
-                              <a href="#"><i class="s3 fab fa-github"  style="color: rgba(0, 0, 0, 0.925);"></i></a>
-                              <span class="icon-name n3">github</span>
-                        </div>
-            
-                  </div>
                  </div>
-                 <div class="hero_img">
-                       <img src="img/happy-1.png" alt="" class="user_picx">
-                       <img src="img/image-from-rawpixel-id-3032050-original.png" alt="" class="shapes">
+                 <div class="motion">
+                       <!-- <img src="img/happy-1.png" alt="" class="user_picx">
+                       <img src="img/image-from-rawpixel-id-3032050-original.png" alt="" class="shapes"> -->
                  </div>
+                 <div class="motion motion-2"></div>
            </div>
      </section>
 
-     <section class="about p-4" id="about">
+     <section class="about p-2" id="about">
            <h1 class="section-title">About Me</h1>
-           <div class="container py-4 grid">
+           <div class="container py-2 grid">
                  <div class="about_img p-5">
                        <img src="img/user-1.jpg" alt="">
                  </div>
@@ -93,9 +87,9 @@
            </div>
      </section>
 
-     <section class="skills p-4" id="skills">
+     <section class="skills p-2" id="skills">
            <h2 class="section-title">Skills</h2>
-           <div class="container py-4 grid">
+           <div class="container py-2 grid">
                  <div class="skill_text">
                        <h3 class="section__head">professional Skills</h3>
                        <p class="py-3">
@@ -103,7 +97,7 @@
                        </p>
                       <div class="skills__data">
                             <div class="skills__names">
-                              <i class="fab fa-html5 skills__icon"></i>
+                              <i class='bx bxl-html5 skills__icon'></i>
                                   <span class="skill__name">HTML5</span>
                             </div>
                             <div>
@@ -114,7 +108,7 @@
 
                       <div class="skills__data">
                             <div class="skills__names">
-                                  <i class="fab fa-css3 skills__icon"></i>
+                              <i class='bx bxl-css3 skills__icon'></i>
                                   <span class="skill__name">CSS3</span>
                             </div>
                             <div>
@@ -125,7 +119,7 @@
 
                       <div class="skills__data">
                             <div class="skills__names">
-                              <i class="fab fa-joomla skills__icon"></i>
+                              <i class='bx bxl-javascript skills__icon'></i>
                                   <span class="skill__name">JAVASCRIPT</span>
                             </div>
                             <div>
@@ -136,7 +130,17 @@
 
                       <div class="skills__data">
                             <div class="skills__names">
-                              <i class="fa fa-music skills__icon"></i>
+                              <i class='bx bxl-jquery skills__icon'></i>
+                                  <span class="skill__name">JQUERY</span>
+                            </div>
+                            <div>
+                                    <div class="skills__percentage">95%</div>
+                            </div>
+                            <div class="skills__bar skills__jquery"></div>
+                      </div>
+                      <div class="skills__data">
+                            <div class="skills__names">
+                              <i class='bx bxl-react skills__icon'></i>
                                   <span class="skill__name">JQUERY</span>
                             </div>
                             <div>
@@ -151,120 +155,168 @@
                  </div>
            </div>
      </section>
+     
+     <h2 class="section-title">What I Do</h2>
+     <section class="wedo">
+           <div class="container grid py-4">
+                 <div class="web">
+                       <h1>CREATE WEB</h1>
+                       <h2><i class='bx bxl-internet-explorer' ></i></h2>
+                 </div>
+                 <div class="web">
+                       <h1>LOGO DESIGN</h1>
+                       <h2><i class="fa fa-web"></i></h2>
+                 </div>
+                 <div class="web">
+                       <h1>DEBUGGING</h1>
+                       <h2><i class="fa fa-web"></i></h2>
+                 </div>
+                 <div class="web">
+                       <h1>FREELANCING</h1>
+                       <h2><i class="fa fa-web"></i></h2>
+                 </div>
+           </div>
+     </section>
 
      <!-- #####---WORK---###### -->
      <section class="work" id="work">
            <h2 class="section-title">Work</h2>
            <div class="container grid py-4">
                  <div class="work_img">
-                       <div class="preview">
-                             <a href="#" class="btn-preview">Preview</a>
+                       <div class="previews">
+                             <a href="#" class="btn-preview preview">Preview</a>
                        </div>
                        <img src="img/pngfind.com-instagram-mockup-png-4218096.png" alt="">
+                       <div class="info">
+                             <p>mobile resturant mock up</p>
+                       </div>
                  </div>
                  <div class="work_img">
-                  <div class="preview">
-                        <a href="#" class="btn-preview">Preview</a>
+                  <div class="previews">
+                        <a href="#" class="btn-preview preview">Preview</a>
                   </div>
                        <img src="img/pngfind.com-imac-mockup-png-6511196.png" alt="">
+                       <div class="info">
+                        <p>mobile resturant mock up</p>
+                  </div>
                  </div>
                  <div class="work_img">
-                  <div class="preview">
-                        <a href="#" class="btn-preview">Preview</a>
+                  <div class="previews">
+                        <a href="#" class="btn-preview preview">Preview</a>
                   </div>
                        <img src="img/pngfind.com-tablet-mockup-png-4148935 (1).png" alt="">
+                       <div class="info">
+                        <p>mobile resturant mock up</p>
+                  </div>
                  </div>
                  <div class="work_img">
-                  <div class="preview">
-                        <a href="#" class="btn-preview">Preview</a>
+                  <div class="previews">
+                        <a href="#" class="btn-preview preview">Preview</a>
                   </div>
                        <img src="img/pngfind.com-laptop-mockup-png-6452893.png" alt="">
+                       <div class="info">
+                        <p>mobile resturant mock up</p>
+                  </div>
                  </div>
                  <div class="work_img">
-                  <div class="preview">
-                        <a href="#" class="btn-preview">Preview</a>
+                  <div class="previews">
+                        <a href="#" class="btn-preview preview">Preview</a>
                   </div>
                        <img src="img/pngfind.com-macbook-mockup-png-5179281.png" alt="">
+                       <div class="info">
+                        <p>mobile resturant mock up</p>
+                  </div>
                  </div>
                  <div class="work_img">
-                  <div class="preview">
-                        <a href="#" class="btn-preview">Preview</a>
+                  <div class="previews">
+                        <a href="#" class="btn-preview preview">Preview</a>
                   </div>
                        <img src="img/pngfind.com-responsive-website-png-1725303.png" alt="">
+                       <div class="info">
+                        <p>mobile resturant mock up</p>
+                  </div>
                  </div>
                  <div class="work_img">
-                  <div class="preview">
-                        <a href="#" class="btn-preview">Preview</a>
+                  <div class="previews">
+                        <a href="#" class="btn-preview preview">Preview</a>
                   </div>
                        <img src="img/pngfind.com-imac-mockup-png-6511196.png" alt="">
+                       <div class="info">
+                        <p>mobile resturant mock up</p>
+                  </div>
                  </div>
            </div>
      </section>
 
      <!-- #####---REVIEWS---############### -->
-     <section class="reviews flex" id="review">
-           <div class="overflow flex">
-                 <div class="review grid my-2">
-                       <div class="review__img">
-                             <img src="img/pngfind.com-happy-person-png-620880.png" alt="">
-                       </div>
-                       <div class="review__text p-3">
-                             <h3 class = "review-title">sir johnson</h3>
-                             <p  class = "py-2">
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo alias, tenetur sed aut nulla, repudiandae dolores atque voluptatem velit quisquam sint neque, vero rerum.
-                             </p>
-                             <span>
-                                   <i class="review__icons fa fa-star"></i>
-                                   <i class="review__icons fa fa-star"></i>
-                                   <i class="review__icons fa fa-star"></i>
-                                   <i class="review__icons fa fa-star-half"></i>
-                              </span>
-                       </div>
-                 </div>
-                 <div class="review grid my-2">
-                       <div class="review__img">
-                             <img src="img/pngfind.com-happy-person-png-2812725.png" alt="">
-                       </div>
-                       <div class="review__text p-3">
-                             <h3 class = "review-title">Molly Craig</h3>
-                             <p class = "py-2">
-                                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem distinctio est possimus velit, quo odio ipsa blanditiis quia culpa modi soluta vero repellendus neque rem, hic quibusdam?
-                             </p>
-                             <span>
-                                   <i class="review__icons fa fa-star"></i>
-                                   <i class="review__icons fa fa-star"></i>
-                                   <i class="review__icons fa fa-star"></i>
-                              </span>
-                       </div>
-                 </div>
-                 <div class="review grid my-1">
-                       <div class="review__img">
-                             <img src="img/pngfind.com-happy-man-png-1497143.png" alt="">
-                       </div>
-                       <div class="review__text p-1">
-                             <h3 class = "review-title">Jacob Kelvin</h3>
-                             <p class = "py-2">
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit modi et eos, quos ducimus laudantium adipisci. Quaerat, nam alias consequatur facilis odio aut iure facere possimus sequi quisquam quae!
-                             </p>
-                             <span>
-                                   <i class="review__icons fa fa-star"></i>
-                                   <i class="review__icons fa fa-star"></i>
-                                   <i class="review__icons fa fa-star"></i>
-                                   <i class="review__icons fa fa-star"></i><i class="review__icons fa fa-star-half"></i>
-                        </span>
-                       </div>
-                 </div>
+     <h2 class="section-title">reviews</h2>
+     <section class="rev">
+           <div class="container autoplay py-4">
+            <div class="view">
+                  <div class="review__img">
+                        <img src="img/pngfind.com-happy-person-png-620880.png" alt="">
+                  </div>
+                  <div class="review__text">
+                        <h3 class = "review-title">sir johnson</h3>
+                        <p  class = "py-2">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo alias, tenetur sed aut nulla, repudiandae dolores atque voluptatem velit quisquam sint neque, vero rerum.
+                        </p>
+                        <span>
+                              <i class="review__icons fa fa-star"></i>
+                              <i class="review__icons fa fa-star"></i>
+                              <i class="review__icons fa fa-star"></i>
+                              <i class="review__icons fa fa-star-half"></i>
+                         </span>
+                  </div>
+            </div>
+            <div class="view">
+                  <div class="review__img">
+                        <img src="img/pngfind.com-happy-person-png-620880.png" alt="">
+                  </div>
+                  <div class="review__text">
+                        <h3 class = "review-title">sir johnson</h3>
+                        <p  class = "py-2">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo alias, tenetur sed aut nulla, repudiandae dolores atque voluptatem velit quisquam sint neque, vero rerum.
+                        </p>
+                        <span>
+                              <i class="review__icons fa fa-star"></i>
+                              <i class="review__icons fa fa-star"></i>
+                              <i class="review__icons fa fa-star"></i>
+                              <i class="review__icons fa fa-star-half"></i>
+                         </span>
+                  </div>
+            </div>
+            <div class="view">
+                  <div class="review__img">
+                        <img src="img/pngfind.com-happy-person-png-620880.png" alt="">
+                  </div>
+                  <div class="review__text">
+                        <h3 class = "review-title">sir johnson</h3>
+                        <p  class = "py-2">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo alias, tenetur sed aut nulla, repudiandae dolores atque voluptatem velit quisquam sint neque, vero rerum.
+                        </p>
+                        <span>
+                              <i class="review__icons fa fa-star"></i>
+                              <i class="review__icons fa fa-star"></i>
+                              <i class="review__icons fa fa-star"></i>
+                              <i class="review__icons fa fa-star-half"></i>
+                         </span>
+                  </div>
+            </div>
            </div>
      </section>
+
+     <div class="pre"></div>
+     <div class="error"></div>
 
      <!-- ######---CONTACT---##### -->
      <section class="contact" id="contact">
            <h2 class="section-title">Contact</h2>
-           <div class="container flex p-5">
-            <form class="p-5 px-4" action="">
+           <div class="container grid-1 py-5">
+            <form class="p" action="">
                   <input class="contact__input" type="text" placeholder="Name">
                   <input class="contact__input" type="email" placeholder="Email">
-                  <textarea class="contact__input" name="" id="" cols="0" rows="10"></textarea>
+                  <textarea class="contact__input" name="" id=""></textarea>
                   <input class="btn contact__button" type="button" value="Enter">
             </form>
            </div>
@@ -297,12 +349,30 @@
             </div>
      </footer>
 
+     <!-- <div class="mode"> -->
+           <i class="state_icon mode fa fa-moon"></i>
+      <!-- </div> -->
+
+     <script src="js/jquery.js"></script>
      <script src="js/script.js"></script>
+     <script  type="text/javascript" src="js/slick.js"></script>
 
      <!-- ######### TYPESCRIPTING ############## -->
      <script>
-                      let options = {
-                 strings: [
+      // ############# AJAX ############
+
+      $('.autoplay').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+});
+$('.autoplay').css({
+      width: '400px',
+})
+// ################################ TYPESCRIPTING ##########################
+            let options = {
+                  strings: [
                        'FRONTEND WEB DEVELOPER',
                        'FREELANCER',
                        'FASHION DESIGNER'
@@ -310,7 +380,7 @@
                   loop: true,
                  typeSpeed: 100,
            }
-      let typed = new Typed('.name-2', options);
+      let typed = new Typed('.name-2', options);  
      </script>
 </body>
 </html>

@@ -2,10 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto&display=swap');
 
 :root{
-      --primary-color: #047aed;
+      --primary-color: #0689cc;
       --secondary-color: rgba(17, 17, 17, 0.811);
       --dark-color: #011629;
-      --light-color: #f4f4f4;
+      --light-color: #adc9d37b;
+      --color: #fff;
+      --color-1: #000;
+      --color-3: #fff;
+      --card-color: rgba(14, 36, 49, 0.15);
+      --ascent-color: #e39e22;
+      --hero-color: rgba(2, 13, 28, 0.9);
 }
 *{
       padding: 0;
@@ -19,6 +25,8 @@ html{
 body{
       font-family: 'Ubuntu', sans-serif;
       position: relative;
+      background-color: var(--color-3);
+      color: var(--color-1);
 }
 ::-webkit-scrollbar-thumb{
       background-color: var(--primary-color);
@@ -30,33 +38,24 @@ body{
 ::-webkit-scrollbar:hover{
       width: 8px;
 }
+
 .social_icons{
-      display: flex;
-      /* width: 50px; */
-      font-size: 2rem;
-      z-index: 2;
-      margin-top: 1rem;
+      /* font-size: 2rem; */
+      margin-top: 1.3rem;
+      color: var(--ascent-color);
 }
 
-.social-icon a{
-      font-size: 2rem;
-      display: inline-block;
-      color: coral;
-}
-
-.social-icon span{
-      color: #fff;
-}
-.social-icon:hover a{
-      color: #fff;
-}
 /* navbar */
 header{
       height: 5rem;
       top: 0;
       left: 0;
       width: 100%;
-      background-color: var(--light-color);
+      background-color: rgba(24, 24, 66, 0.719);
+}
+
+section{
+      background-attachment: fixed;
 }
 .sticky{
       position: fixed;
@@ -68,13 +67,14 @@ header{
       display: none;
 }
 .name-1{
-      font-size: 4rem;
-      color: rgba(17, 17, 17, 0.811);
+      font-size: 3.2rem;
+      color: var(--hero-color);
 }
 .name-2{
       font-size: 1.5rem;
       letter-spacing: 1px;
-      color: rgba(17, 17, 17, 0.811);
+      /* color: var(--color-1); */
+      color: var(--hero-color);
       margin-bottom: 10px;
 }
 .logo{
@@ -82,16 +82,41 @@ header{
       align-items: center;
       font-family: 'Rampart one', cursive;
       font-size: 1.5rem;
-      color: rgb(231, 67, 7);
+      color: var(--ascent-color);
 }
 .logo img{
       display: inline;
       width: 40px;
       height: 40px;
 }
+.hero_side-text{
+      position: relative;
+      z-index: 5;
+}
+.hero .container{
+      background-image: url(/img/pngfind.com-happy-person-png-1647027.png);
+      background-position: 80%;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+}
 .hero{
+      /* min-height: 100vh; */
       font-family: 'Rampart one', cursive;
       background-color: var(--light-color);
+      position: relative;
+      z-index: 2;
+      color: var(--hero-color);
+}
+.hero::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(1, 2, 1, 0.151);
+      z-index: 1;
+      width: 100%;
+      height: 100%;
 }
 .hero_img{
       position: relative;
@@ -99,6 +124,28 @@ header{
       background-image: url('/img/image-from-rawpixel-id-3032035-original.png');
       background-position: center;
       background-size: cover;
+}
+.motion{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border: 3px solid var(--primary-color);
+      top: 100px;
+      right: 70px;
+      z-index: 110;
+      animation: motion 8s infinite;
+}
+.motion-2{
+      top: 450px;
+      left: 50%;
+}
+@keyframes motion {
+      0%{
+            transform: rotate(360deg);
+      }
+      100%{
+            transform: rotate(10deg);
+      }
 }
 .user_picx{
       position: absolute;
@@ -118,8 +165,12 @@ img.user_picx{
 .hero_side-text{
       align-self: flex-start;
 }
+/* ################################ HERO ENDS ########################## */
 
 /* -######--ABOUT ME---##### */
+.about{
+      color: var(--color-1);
+}
 .about .grid{
       grid-template-columns: 1fr 2fr;
 }
@@ -137,11 +188,15 @@ img.user_picx{
 /* ######---SKILLS---###### */
 .skills{
       background: var(--light-color);
+      padding: 0 6rem !important;
+}
+.skill_img{
+      padding: 0 5rem;
 }
 .skills__data{
       display: flex;
       justify-content: space-between;
-      background-color: #fff;
+      background-color: var(--color-3);
       align-items: center;
       position: relative;
       padding: 1rem 1rem;
@@ -163,7 +218,7 @@ img.user_picx{
       left: 0;
       bottom: 0;
       background-color: var(--primary-color);
-      height: .25rem;
+      height: .35rem;
       border-radius: .5rem;
       z-index: 1;
 }
@@ -180,6 +235,13 @@ img.user_picx{
       width: 90%;
 }
 
+/* ################# WHAAT I DO  #################### */
+.wedo{
+      background-color: var(--primary-color);
+      /* color: var(--color); */
+      color: #fff;
+      margin-top: 5rem;
+}
 /* ###############---WORKS---############# */
 .work .flex{
       flex-wrap: wrap;
@@ -188,13 +250,13 @@ img.user_picx{
 .work_img{
       width: 100%;
       height: 100%; 
-      box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+      box-shadow: 0 4px 25px var(--card-color);
       border-radius: .5rem;
       overflow: hidden;
       padding: 30px;
       position: relative;
 }
-.preview{
+.previews{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -207,13 +269,13 @@ img.user_picx{
       z-index: 5;
       transition: all 1s;
 }
-.preview a{
+.btn-preview{
       opacity: 0;
       color: #fff;
-      border: 1px solid #ddd;
+      border: 1px solid #ddd !important;
       border-radius: 5px;
 }
-.work_img:hover .preview{
+.work_img:hover .previews{
       height: 100%;
 }
 .work_img:hover a{
@@ -228,45 +290,39 @@ img.user_picx{
 }
 
 /* ############### REVIEWS ############ */
-
-.reviews{
-      height: 70vh !important;
+.rev{
       background-color: var(--light-color);
-      z-index: -1;
-      margin-top: 3rem;
 }
-.overflow{
-      width: 60%;
-      height: 90%;
-      overflow: hidden;
-      position: relative;
+.view{
+      width: 468px;
+      padding: 2rem 0;
+      border: 2px solid var(--primary-color);
 }
-.review{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      transition: transform 2s ease;
+.rev .container{
+      text-align: center;
+      max-width: 1000px;
 }
 .review__img{
       width: 250px;
       height: 250px;
-      border-radius: 50%;
+      border-radius: 5%;
+      margin: 0 auto;
 }
 .review__img img{
-      border-radius: 50%;
+      border-radius: 50% 20% 2% 50%;
       border: 2px solid var(--primary-color);
 }
 .review-title{
       text-transform: capitalize;
       font-size: 1.5rem;
 }
+.review__text{
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 2rem;
+}
 .review__text span i{
-      color: rgb(243, 186, 42);
+      color: #e39e22;
       font-size: 1.4rem;
       letter-spacing: 5px;
 }
@@ -281,6 +337,7 @@ img.user_picx{
       margin-bottom: 1rem;
       outline: none;
       border: 1px solid var(--primary-color);
+      background-color: var(--color);
 }
 .contact__button{
       display: block;
@@ -319,16 +376,42 @@ img.user_picx{
       color: #fff;
       margin: 0 1rem;
 }
+
+.mode{
+      position: fixed;
+      right: 10px;
+      bottom: 20px;
+      background-color: black;
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 99;
+}
+.light{
+      background-color: white;
+      color: black;
+}
 /* media query */
 @media (max-width: 768px) {
       body{
-            font-size: 30px;
+            font-size: 18px;
       }
-      .about_text p{
+      .about_text p, .skill_text p{
             width: 100%;
-            font-size: 2.2rem;
-            line-height: 2.2rem;
+            font-size: 1.3rem;
+            line-height: 2.4rem;
             max-width: 100%;
+      }
+      .skill_img{
+            padding: 50px;
+      }
+      .work .grid{
+            grid-gap: 60px;
+      }
+      .work_img{
+            padding: 30px;
       }
       .nav__toggle{
             display: block;
@@ -377,18 +460,35 @@ img.user_picx{
       .grid{
             grid-template-columns: 1fr !important;
       }
+      .grid-1{
+            width: 97% !important;
+      }
+      .work .grid{
+            grid-template-columns: 1fr 1fr !important;
+      }
       .px-4{
             padding: 0 .5rem !important;
       }
       .reviews{
-            height: 85vh !important;
+            height: 600px !important;
       }
-      .review .grid{
-            grid-gap: 10px;
+      .reviews .grid{
+            grid-gap: 1px !important;
+      }
+      .review__text{
+            height: 100% !important;
       }
       .overflow{
             width: 90%;
       }
+      .skills{
+            padding: 0 1rem !important;
+      }
+}
+@media (max-width: 550px) {
+      .work .grid{
+            grid-template-columns: 1fr !important;
+      }      
 }
 
 @media (max-width: 1028px) {
