@@ -27,6 +27,7 @@ body{
       position: relative;
       background-color: var(--color-3);
       color: var(--color-1);
+      overflow-x: hidden;
 }
 ::-webkit-scrollbar-thumb{
       background-color: var(--primary-color);
@@ -241,6 +242,17 @@ img.user_picx{
       /* color: var(--color); */
       color: #fff;
       margin-top: 5rem;
+      text-align: center;
+}
+.wedo i{
+      font-size: 4rem;
+}
+.wedo h1{
+      font-size: 4rem;
+      margin: 1rem 0;
+}
+.wedo h3{
+      font-size: 1.4rem;
 }
 /* ###############---WORKS---############# */
 .work .flex{
@@ -291,16 +303,17 @@ img.user_picx{
 
 /* ############### REVIEWS ############ */
 .rev{
+      width: 100%;
       background-color: var(--light-color);
 }
 .view{
       width: 468px;
       padding: 2rem 0;
-      border: 2px solid var(--primary-color);
+      border: 1px solid var(--primary-color);
 }
 .rev .container{
       text-align: center;
-      max-width: 1000px;
+      /* max-width: 1000px; */
 }
 .review__img{
       width: 250px;
@@ -308,9 +321,14 @@ img.user_picx{
       border-radius: 5%;
       margin: 0 auto;
 }
+.rev h2{
+      margin: .1rem 0;
+      padding: .1rem 0;
+      margin-top: 1.rem !important;
+}
 .review__img img{
       border-radius: 50% 20% 2% 50%;
-      border: 2px solid var(--primary-color);
+      border: 1px solid var(--primary-color);
 }
 .review-title{
       text-transform: capitalize;
@@ -394,7 +412,7 @@ img.user_picx{
       color: black;
 }
 /* media query */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
       body{
             font-size: 18px;
       }
@@ -483,6 +501,13 @@ img.user_picx{
       }
       .skills{
             padding: 0 1rem !important;
+      }
+      .wedo .grid{
+            grid-template-columns: repeat(2, 1fr) !important;
+      }
+      .mode{
+            right: 30px;
+            bottom: 30px;
       }
 }
 @media (max-width: 550px) {

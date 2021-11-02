@@ -54,6 +54,9 @@ section{
       grid-template-columns: 1fr;
       width: 70%;
 }
+.rev.grid-1{
+      width: 100%;
+}
 .work .grid, .wedo .grid{
       grid-template-columns: repeat(4, 1fr);
 }

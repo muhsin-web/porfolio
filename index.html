@@ -158,22 +158,26 @@
      
      <h2 class="section-title">What I Do</h2>
      <section class="wedo">
-           <div class="container grid py-4">
+           <div class=" grid py-3">
                  <div class="web">
-                       <h1>CREATE WEB</h1>
-                       <h2><i class='bx bxl-internet-explorer' ></i></h2>
+                       <h2><i class='bx bx-history'></i></h2>
+                       <h1 class="counter" id="hours">701</h1>
+                       <h3>Working Hours</h3>
                  </div>
                  <div class="web">
-                       <h1>LOGO DESIGN</h1>
-                       <h2><i class="fa fa-web"></i></h2>
+                       <h2><i class='bx bx-gift' ></i></h2>
+                       <h1 class="counter" id="projects">218</h1>
+                       <h3>Completed Projects</h3>
                  </div>
                  <div class="web">
-                       <h1>DEBUGGING</h1>
-                       <h2><i class="fa fa-web"></i></h2>
+                       <h2><i class='bx bx-group' ></i></h2>
+                       <h1 class="counter" id="client">153</h1>
+                       <h3>Happy Clients</h3>
                  </div>
                  <div class="web">
-                       <h1>FREELANCING</h1>
-                       <h2><i class="fa fa-web"></i></h2>
+                       <h2><i class='bx bx-award' ></i></h2>
+                       <h1 class="counter" id="awards">63</h1>
+                       <h3>Awards Recieved</h3>
                  </div>
            </div>
      </section>
@@ -249,9 +253,9 @@
      </section>
 
      <!-- #####---REVIEWS---############### -->
-     <h2 class="section-title">reviews</h2>
-     <section class="rev">
-           <div class="container autoplay py-4">
+     <section class="rev grid grid-1 py-2 my-3">
+           <h2 class="section-title">reviews</h2>
+           <div class="container autoplay py-2">
             <div class="view">
                   <div class="review__img">
                         <img src="img/pngfind.com-happy-person-png-620880.png" alt="">
@@ -356,9 +360,17 @@
      <script src="js/jquery.js"></script>
      <script src="js/script.js"></script>
      <script  type="text/javascript" src="js/slick.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
      <!-- ######### TYPESCRIPTING ############## -->
      <script>
+
+           $(".counter").counterUp({
+                 delay: 10,
+                 time: 1200,
+           })
       // ############# AJAX ############
 
       $('.autoplay').slick({
@@ -367,8 +379,10 @@
   autoplay: true,
   autoplaySpeed: 4000,
 });
+
 $('.autoplay').css({
       width: '400px',
+      margin: '0 auto',
 })
 // ################################ TYPESCRIPTING ##########################
             let options = {
