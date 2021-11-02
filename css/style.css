@@ -192,7 +192,7 @@ img.user_picx{
       padding: 0 6rem !important;
 }
 .skill_img{
-      padding: 0 5rem;
+      padding: 0 4rem;
 }
 .skills__data{
       display: flex;
@@ -267,6 +267,15 @@ img.user_picx{
       overflow: hidden;
       padding: 30px;
       position: relative;
+}
+.work_img img{
+      height: 95%;
+}
+.info{
+      text-transform: capitalize;
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.637);
 }
 .previews{
       display: flex;
@@ -508,6 +517,9 @@ img.user_picx{
       .mode{
             right: 30px;
             bottom: 30px;
+      }
+      .slick-next, .slick-prev{
+            display: none !important;
       }
 }
 @media (max-width: 550px) {
