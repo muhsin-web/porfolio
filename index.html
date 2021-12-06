@@ -1,400 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Muhsin Portfolio</title>
-      <!-- ######### LINKINGS -->
-      <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fridax.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="FortAwesome-Font-Awesome-7d3d774/css/all.min.css">
 
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/utilities.css">
-      <link rel="stylesheet" href="FortAwesome-Font-Awesome-7d3d774/css/all.min.css">
-      <script src="typed.js-master/lib/typed.min.js"></script>
-      <link rel="stylesheet" href="css/slick.css">
-      <link rel="stylesheet" href="css/slick_theme.css">
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
-
 <body>
+    <div class="scroll-up">
+        <i class="fas fa-angle-up"></i>
+    </div>
 
-      <!-- ########## PRELOADER ############# -->
-      <div id="preloader">
-            <div class="loader ">
-                  <img src="img/Eclipse-0.5s-211px.gif" alt="">
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Fri<span>dax.</span></a></div>
+
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#team" class="menu-btn">Teams</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
-      </div>
+        </div>
+    </nav>
+    
 
-     <!-- nav header -->
-     <header class="header">
-           <div class="container flex">
-            <span class="logo">
-                  <img src="img/pngfind.com-abstract-shapes-png-2828709.png" alt="">
-                  <h2 class="logo-text">Jamaz</h2>
-            </span>
-            <div class="nav__menu" id="nav-menu">
-                  <ul class="flex nav__list">
-                        <li class="nav__items"><a href="#home" class="nav__link">home</a></li>
-                        <li class="nav__items"><a href="#about" class="nav__link">about</a></li>
-                        <li class="nav__items"><a href="#work" class="nav__link">portfolio</a></li>
-                        <li class="nav__items"><a href="#review" class="nav__link">reviews</a></li>
-                        <li class="nav__items"><a href="#contact" class="nav__link">contact</a></li>
-                  </ul>
-            </div> 
-            <div class="nav__toggle" id="nav-toggle">
-                  <i class='bx bx-menu'></i>
-            </div>    
-           </div>
-     </header>
+    <!-- HOME SECTION START -->
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+               <div class="left">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Muhsin Abdulrasheed</div>
+                <div class="text-3">And am a <span class="typing"> </span></div>
+                <a href="#" class="btn">Hire me</a>
+               </div>
+               <div class="right">
+                   <img src="img/32f03b74-672e-4f62-a24d-144e31eb2c5e.jpeg" alt="">
+               </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="img/51112752_395098231034410_4787259814721880064_n.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Muhsin and I'm a <span class="typing-2"></span></div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus modi commodi expedita adipisci exercitationem ab omnis reiciendis natus voluptas. Eum sint facilis itaque totam vel earum ut ex dolore dicta, provident numquam obcaecati nisi nihil possimus explicabo modi quaerat consequuntur, temporibus esse ipsa omnis quo deserunt officiis tempore? Provident nam nostrum eos dicta possimus alias quaerat culpa incidunt ipsa nobis.</p>
+                    <a href="img/Modern Clean Professional Photo Web Developer Resume CV .pdf" download class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <div class="services-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Design</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam error voluptates delectus fugiat quae.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Advertising</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam error voluptates delectus fugiat quae.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Apps Design</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam error voluptates delectus fugiat quae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
 
-     <!-- hero sectionitems-->
-     <section class="hero py-5" id="home">
-           <div class="container grid">
-                 <div class="hero_side-text mt-6">
-                       <h1 class="name-1">Hi <br> I'm Muhsin Oky</h1>
-                       <h2 class="py-2">AM A <span class="name-2"></span></h2>
-                       <button class="btn btn-1">Download CV</button>
-                       <button class="btn btn-2">Hire Me</button>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & Experiences.</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dignissimos est eveniet dolor tenetur ducimus, praesentium incidunt obcaecati nisi similique expedita quidem corporis quaerat impedit!</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
 
-                       <div class="social_icons">
-                              <a href="#"><i class="s1 fab fa-behance fa-2x"  style="color: rgb(18, 99, 25);"></i></a>
-                              <a href="#"><i style="color: rgb(19, 150, 202);" class="s2 fab fa-twitter fa-2x"></i></a>
-                              <a href="#"><i class="s3 fab fa-github fa-2x" id="git" style="color: black;"></i></a>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                        <span>HTML</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="line html"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                        <span>CSS</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="line css"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                        <span>Javascript</span>
+                        <span>80%</span>
+                        
+                    </div>
+                    <div class="line js"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                        <span>PHp</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="line php"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                        <span>MYSQL</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="teams" id="team">
+        <div class="max-width">
+            <h2 class="title">My teams</h2>
+
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="img/51112752_395098231034410_4787259814721880064_n.jpg" alt="">
+                        <div class="text">someone name</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/51112752_395098231034410_4787259814721880064_n.jpg" alt="">
+                        <div class="text">someone name</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/51112752_395098231034410_4787259814721880064_n.jpg" alt="">
+                        <div class="text">someone name</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/51112752_395098231034410_4787259814721880064_n.jpg" alt="">
+                        <div class="text">someone name</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/51112752_395098231034410_4787259814721880064_n.jpg" alt="">
+                        <div class="text">someone name</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloribus dicta, explicabo pariatur nostrum fugiat iure repudiandae corporis eos quisquam!</p>
+
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Muhsin Oki</div>
+                            </div>
                         </div>
-                 </div>
-                 <div class="motion">
-                       <!-- <img src="img/happy-1.png" alt="" class="user_picx">
-                       <img src="img/image-from-rawpixel-id-3032050-original.png" alt="" class="shapes"> -->
-                 </div>
-                 <div class="motion motion-2"></div>
-           </div>
-     </section>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Muhsin@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">Muhsin Oki</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-     <section class="about p-2" id="about">
-           <h1 class="section-title">About Me</h1>
-           <div class="container py-2 grid">
-                 <div class="about_img p-5">
-                       <img src="img/user-1.jpg" alt="">
-                 </div>
-                 <div class="about_text">
-                       <h3 class="section__head">Am Muhsin</h3>
-                       <p class="about__me py-1">
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti beatae aut libero hic esse sint. Impedit consectetur eos enim autem distinctio possimus inventore illo voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum suscipit itaque, error obcaecati blanditiis cumque mollitia ratione beatae officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nihil cumque in doloremque reprehenderit quae quibusdam dolorum provident, deleniti nostrum!
-                       </p>
-                 </div>
-           </div>
-     </section>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="name" name="" id="" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="email" name="" id="" required>
+                            </div>
+                        </div>
 
-     <section class="skills p-" id="skills">
-           <h2 class="section-title">Skills</h2>
-           <div class="container py- grid">
-                 <div class="skill_text py-2">
-                       <h3 class="section__head">professional Skills</h3>
-                       <p class="py-3">
-                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio at nobis expedita maiores debitis quod laborum sint quibusdam aperiam eos!
-                       </p>
-                      <div class="skills__data">
-                            <div class="skills__names">
-                              <i class='bx bxl-html5 skills__icon'></i>
-                                  <span class="skill__name">HTML5</span>
-                            </div>
-                            <div>
-                                    <div class="skills__percentage">95%</div>
-                            </div>
-                            <div class="skills__bar skills__html"></div>
-                      </div>
-
-                      <div class="skills__data">
-                            <div class="skills__names">
-                              <i class='bx bxl-css3 skills__icon'></i>
-                                  <span class="skill__name">CSS3</span>
-                            </div>
-                            <div>
-                                    <div class="skills__percentage">85%</div>
-                            </div>
-                            <div class="skills__bar skills__css"></div>
-                      </div>
-
-                      <div class="skills__data">
-                            <div class="skills__names">
-                              <i class='bx bxl-javascript skills__icon'></i>
-                                  <span class="skill__name">JAVASCRIPT</span>
-                            </div>
-                            <div>
-                                    <div class="skills__percentage">80%</div>
-                            </div>
-                            <div class="skills__bar skills__javascript"></div>
-                      </div>
-
-                      <div class="skills__data">
-                            <div class="skills__names">
-                              <i class='bx bxl-jquery skills__icon'></i>
-                                  <span class="skill__name">JQUERY</span>
-                            </div>
-                            <div>
-                                    <div class="skills__percentage">95%</div>
-                            </div>
-                            <div class="skills__bar skills__jquery"></div>
-                      </div>
-                      <div class="skills__data">
-                            <div class="skills__names">
-                              <i class='bx bxl-react skills__icon'></i>
-                                  <span class="skill__name">JQUERY</span>
-                            </div>
-                            <div>
-                                    <div class="skills__percentage">95%</div>
-                            </div>
-                            <div class="skills__bar skills__jquery"></div>
-                      </div>
-                 </div>
-
-                 <div class="skill_img">
-                       <img src="img/pngfind.com-happy-person-png-2812725.png" alt="">
-                 </div>
-           </div>
-     </section>
-     
-     <h2 class="section-title">What I Do</h2>
-     <section class="wedo">
-           <div class=" grid py-3">
-                 <div class="web">
-                       <h2><i class='bx bx-history'></i></h2>
-                       <h1 class="counter" id="hours">701</h1>
-                       <h3>Working Hours</h3>
-                 </div>
-                 <div class="web">
-                       <h2><i class='bx bx-gift' ></i></h2>
-                       <h1 class="counter" id="projects">218</h1>
-                       <h3>Completed Projects</h3>
-                 </div>
-                 <div class="web">
-                       <h2><i class='bx bx-group' ></i></h2>
-                       <h1 class="counter" id="client">153</h1>
-                       <h3>Happy Clients</h3>
-                 </div>
-                 <div class="web">
-                       <h2><i class='bx bx-award' ></i></h2>
-                       <h1 class="counter" id="awards">63</h1>
-                       <h3>Awards Recieved</h3>
-                 </div>
-           </div>
-     </section>
-
-     <!-- #####---WORK---###### -->
-     <section class="work" id="work">
-           <h2 class="section-title">Work</h2>
-           <div class="container grid py-4">
-                 <div class="work_img">
-                       <div class="previews">
-                             <a href="#" class="btn-preview preview">Preview</a>
-                       </div>
-                       <img src="img/pngfind.com-instagram-mockup-png-4218096.png" alt="">
-                       <div class="info">
-                             <p>mobile resturant mock up</p>
-                       </div>
-                 </div>
-                 <div class="work_img">
-                  <div class="previews">
-                        <a href="#" class="btn-preview preview">Preview</a>
-                  </div>
-                       <img src="img/pngfind.com-imac-mockup-png-6511196.png" alt="">
-                       <div class="info">
-                        <p>ease to get running</p>
-                  </div>
-                 </div>
-                 <div class="work_img">
-                  <div class="previews">
-                        <a href="#" class="btn-preview preview">Preview</a>
-                  </div>
-                       <img src="img/pngfind.com-tablet-mockup-png-4148935 (1).png" alt="">
-                       <div class="info">
-                        <p>mobile resturant web app</p>
-                  </div>
-                 </div>
-                 <div class="work_img">
-                  <div class="previews">
-                        <a href="#" class="btn-preview preview">Preview</a>
-                  </div>
-                       <img src="img/pngfind.com-laptop-mockup-png-6452893.png" alt="">
-                       <div class="info">
-                        <p>calender checker</p>
-                  </div>
-                 </div>
-                 <div class="work_img">
-                  <div class="previews">
-                        <a href="#" class="btn-preview preview">Preview</a>
-                  </div>
-                       <img src="img/pngfind.com-macbook-mockup-png-5179281.png" alt="">
-                       <div class="info">
-                        <p>clothing ecommerce</p>
-                  </div>
-                 </div>
-                 <div class="work_img">
-                  <div class="previews">
-                        <a href="#" class="btn-preview preview">Preview</a>
-                  </div>
-                       <img src="img/pngfind.com-responsive-website-png-1725303.png" alt="">
-                       <div class="info">
-                        <p>adreal landpage</p>
-                  </div>
-                 </div>
-                 <div class="work_img">
-                  <div class="previews">
-                        <a href="#" class="btn-preview preview">Preview</a>
-                  </div>
-                       <img src="img/pngfind.com-imac-mockup-png-6511196.png" alt="">
-                       <div class="info">
-                        <p>virtual meeting landpage</p>
-                  </div>
-                 </div>
-           </div>
-     </section>
-
-     <!-- #####---REVIEWS---############### -->
-     <section class="rev grid grid-1 py-2 my-3">
-           <h2 class="section-title">reviews</h2>
-           <div class="container autoplay py-2">
-            <div class="view">
-                  <div class="review__img">
-                        <img src="img/pngfind.com-happy-person-png-620880.png" alt="">
-                  </div>
-                  <div class="review__text">
-                        <h3 class = "review-title">sir johnson</h3>
-                        <p  class = "py-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo alias, tenetur sed aut nulla, repudiandae dolores atque voluptatem velit quisquam sint neque, vero rerum.
-                        </p>
-                        <span>
-                              <i class="review__icons fa fa-star"></i>
-                              <i class="review__icons fa fa-star"></i>
-                              <i class="review__icons fa fa-star"></i>
-                              <i class="review__icons fa fa-star-half"></i>
-                         </span>
-                  </div>
+                        <div class="field">
+                            <input type="text" placeholder="subject" name="" id="" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea name="" cols ="30" rows ="10" placeholder="Describe project..." id="" cols="30" rows="10"></textarea required>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="view">
-                  <div class="review__img">
-                        <img src="img/pngfind.com-happy-person-png-620880.png" alt="">
-                  </div>
-                  <div class="review__text">
-                        <h3 class = "review-title">sir johnson</h3>
-                        <p  class = "py-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo alias, tenetur sed aut nulla, repudiandae dolores atque voluptatem velit quisquam sint neque, vero rerum.
-                        </p>
-                        <span>
-                              <i class="review__icons fa fa-star"></i>
-                              <i class="review__icons fa fa-star"></i>
-                              <i class="review__icons fa fa-star"></i>
-                              <i class="review__icons fa fa-star-half"></i>
-                         </span>
-                  </div>
-            </div>
-            <div class="view">
-                  <div class="review__img">
-                        <img src="img/pngfind.com-happy-person-png-620880.png" alt="">
-                  </div>
-                  <div class="review__text">
-                        <h3 class = "review-title">sir johnson</h3>
-                        <p  class = "py-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo alias, tenetur sed aut nulla, repudiandae dolores atque voluptatem velit quisquam sint neque, vero rerum.
-                        </p>
-                        <span>
-                              <i class="review__icons fa fa-star"></i>
-                              <i class="review__icons fa fa-star"></i>
-                              <i class="review__icons fa fa-star"></i>
-                              <i class="review__icons fa fa-star-half"></i>
-                         </span>
-                  </div>
-            </div>
-           </div>
-     </section>
+        </div>
+    </section>
 
-     <div class="pre"></div>
-     <div class="error"></div>
-
-     <!-- ######---CONTACT---##### -->
-     <section class="contact" id="contact">
-           <h2 class="section-title">Contact</h2>
-           <div class="container grid-1 py-5">
-            <form class="p" action="">
-                  <input class="contact__input" type="text" placeholder="Name">
-                  <input class="contact__input" type="email" placeholder="Email">
-                  <textarea class="contact__input" name="" id=""></textarea>
-                  <input class="btn contact__button" type="button" value="Enter">
-            </form>
-           </div>
-     </section>
-
-
-     <!-- ######---FOOTER---##### -->
-     <footer class="footer">
-
-            <div class="container grid">
-                  <div class="py-4 footer__links">
-                        <ul class="footer__link">
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">portfolio</a></li>
-                              <li><a href="#">About</a></li>
-                              <li><a href="#">Work</a></li>
-                        </ul>
-                       </div>
-                  <div class="social_footer">
-                        <p class="footer__title">Muhsin</p>
-
-      <div class="footer__social">
-            <a href="#" class="footer__icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
-      </div>
-      <hr class="my-2">
-      <p>&#169; 2021 copyright all right reserved</p>
-                  </div>
-            </div>
-     </footer>
-
-     <!-- <div class="mode"> -->
-           <i class="state_icon mode fa fa-moon"></i>
-      <!-- </div> -->
-
-     <script src="js/jquery.js"></script>
-     <script src="js/script.js"></script>
-     <script  type="text/javascript" src="js/slick.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-
-     <!-- ######### TYPESCRIPTING ############## -->
-     <script>
-
-           $(".counter").counterUp({
-                 delay: 10,
-                 time: 1200,
-           })
-      // ############# AJAX ############
-
-      $('.autoplay').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 4000,
-});
-
-$('.autoplay').css({
-      width: '400px',
-      margin: '0 auto',
-})
-// ################################ TYPESCRIPTING ##########################
-            let options = {
-                  strings: [
-                       'FRONTEND WEB DEVELOPER',
-                       'FREELANCER',
-                       'FASHION DESIGNER'
-                 ],
-                  loop: true,
-                 typeSpeed: 100,
-           }
-      let typed = new Typed('.name-2', options);  
-     </script>
+    <footer>
+        <span>Created By <a href="#">MuhsinOki</a> | <span class="far far-copy"></span>2020 All rights reserved</span>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
