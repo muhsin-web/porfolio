@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 :root{
     --primary-color: rgb(37, 127, 216);
 }
@@ -403,6 +405,7 @@ section .title::after{
     background: var(--primary-color);
 }
 section.portfolio{
+    font-family: 'ubuntu', sans-serif;
     padding: 70px 0;
 }
 
@@ -415,10 +418,10 @@ section.portfolio{
     background-color: #111;
 }
 .port_container{
-    max-width: 1024px;
+    max-width: 1070px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     /* column-gap: 2rem; */
     gap: 2rem;
     /* grid-template-columns: repeat(3, 1fr) !important; */
@@ -444,7 +447,7 @@ section.portfolio{
     border-radius: 6px 6px 0 0;
 }
 .card_text{
-    /* padding: 15px 5px; */
+    padding: 0 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -461,15 +464,25 @@ section.portfolio{
     border-radius: 6px;
     background: none;
     margin-left: 1.2rem;
-    color: #fff;
     font-weight: 500;
     font-size: .8rem;
+    cursor: pointer;
+}
+.view_btn a{
+    color: #fff;
 }
 .view_btn i{
     color: var(--primary-color);
     margin-right: 10px;
     font-size: .9rem;
 }
+.view_btn:hover{
+    transform: scale(1.06);
+    color: #fff;
+}
+
+
+
 .contact .title::after{
     content: "get in touch";
 }
@@ -696,6 +709,13 @@ footer span a:hover{
     .services .services-content .card{
         width: 100%;
     }
+    section.portfolio{
+        padding-left:  30px;
+        padding-right:  30px;
+    }
+    .box_port{
+        height: 490px !important;
+    }
 }
 
 
@@ -706,4 +726,12 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 26px;
     }
+    .box_port{
+        height: 430px !important;
+    }
 }
+/* @media screen and (min-width: 768px) {
+    .box_port{
+        height: 600px !important;
+    }
+} */
