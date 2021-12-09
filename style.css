@@ -149,6 +149,7 @@ html{
 
 section{
     padding: 100px 0;
+    overflow-x: hidden;
 }
 .about, .services, .skills, .contact, footer{
     font-family: sans-serif;
@@ -195,22 +196,12 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.home .home-content{
-    flex-wrap: nowrap;
-    width: 100%;
-}
-/* .home .home-content .left{
-    width: 85%;
-} */
-.home .home-content .right img{
-    width: 300px;
-    height: 500px;
-}
+
 .about .about-content .left{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 350px;
+    height: 320px;
     width: 350px;
     object-fit: cover;
     border-radius: 6px;
@@ -240,7 +231,7 @@ section .title::after{
 }
 
 
-.services, .teams{
+.services, .teams, .portfolio{
     background-color: #111;
     color: #fff;
 }
@@ -411,8 +402,74 @@ section .title::after{
 .owl-dot:hover{
     background: var(--primary-color);
 }
+section.portfolio{
+    padding: 70px 0;
+}
 
-
+.portfolio .title::before{
+    background-color: #fff;
+    width: 200px;
+}
+.portfolio .title::after{
+    content: "Completed Works";
+    background-color: #111;
+}
+.port_container{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* column-gap: 2rem; */
+    gap: 2rem;
+    /* grid-template-columns: repeat(3, 1fr) !important; */
+}
+.box_port{
+    background-color: #333;
+    /* box-shadow: 5px 5px 10px 5px #c0c0c0; */
+    /* box-shadow: 8px 8px 23px -5px rgba(64,64,64,0.73); */
+    border-radius: 6px;
+    color: #fff;
+    height: 300px;
+    transition: all .3s ease;
+}
+.box_port:hover{
+    transform: translateY(-12px);
+}
+.card_port{
+    height: 80%;
+}
+.card_port-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px 6px 0 0;
+}
+.card_text{
+    /* padding: 15px 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20% !important;
+    text-align: center;
+}
+.card_text-name{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.view_btn{
+    padding: .5rem 1.4rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    background: none;
+    margin-left: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: .8rem;
+}
+.view_btn i{
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: .9rem;
+}
 .contact .title::after{
     content: "get in touch";
 }
