@@ -753,6 +753,12 @@ footer span a:hover{
     .view_btn{
         padding: .35rem .4rem;
     }
+    section .title{
+        font-size: 24px;
+    }
+    section .title::after{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 270px){
@@ -769,12 +775,5 @@ footer span a:hover{
 
     .box_port{
         height: 300px !important;
-    }
-
-    section .title{
-        font-size: 24px;
-    }
-    section .title::after{
-        font-size: 14px;
     }
 } 
