@@ -728,7 +728,7 @@ footer span a:hover{
         font-size: 26px;
     }
     .box_port{
-        height: 430px !important;
+        height: 330px !important;
     }
     .home .home-content .text-2{
         font-size: 25px;
@@ -771,9 +771,5 @@ footer span a:hover{
     section.portfolio {
         padding-left: 7px;
         padding-right: 7px;
-    }
-
-    .box_port{
-        height: 300px !important;
     }
 } 
