@@ -15,21 +15,19 @@ html{
 }
 .scroll-up{
     position: fixed;
-    height: 45px;
-    width: 42px;
     background: var(--primary-color);
-    right: 30px;
-    bottom: 10px;
+    right: 15px;
+    bottom: 5px;
     text-align: center;
-    line-height: 45px;
     color: #fff;
     z-index: 999;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
     border-radius: 10px;
     opacity: 0;
     pointer-events: none;
     transition: all .4s ease;
+    padding: .3rem;
 }
 .scroll-up.show{
     bottom: 30px;
@@ -154,6 +152,7 @@ html{
 section{
     padding: 100px 0;
     overflow-x: hidden;
+    width: 100% !important;
 }
 .about, .services, .skills, .contact, footer{
     font-family: sans-serif;
@@ -406,6 +405,7 @@ section .title::after{
 .owl-dot:hover{
     background: var(--primary-color);
 }
+
 section.portfolio{
     font-family: 'ubuntu', sans-serif;
     padding: 70px 0;
@@ -423,9 +423,8 @@ section.portfolio{
     max-width: 1070px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-    /* column-gap: 2rem; */
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;justify-content: center;
     /* grid-template-columns: repeat(3, 1fr) !important; */
 }
 .box_port{
@@ -441,7 +440,7 @@ section.portfolio{
     transform: translateY(-12px);
 }
 .card_port{
-    height: 80%;
+    height: 85%;
 }
 .card_port-img{
     width: 100%;
@@ -449,11 +448,11 @@ section.portfolio{
     border-radius: 6px 6px 0 0;
 }
 .card_text{
-    padding: 0 5px;
+    padding: 0 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 20% !important;
+    height: 15% !important;
     text-align: center;
 }
 .card_text-name{
@@ -731,9 +730,50 @@ footer span a:hover{
     .box_port{
         height: 430px !important;
     }
-}
-/* @media screen and (min-width: 768px) {
-    .box_port{
-        height: 600px !important;
+    .home .home-content .text-2{
+        font-size: 25px;
     }
-} */
+    .home .home-content .text-1{
+        font-size: 18px;
+    }
+    span.typing-2{
+        font-size: 20px;
+    }
+    .fields{
+        display: flex;
+        flex-direction: column;
+    }
+   div.sub-title{
+        word-wrap: break-word;
+    }
+    
+}
+
+@media screen and (max-width: 270px){
+    body{
+        font-size: 14px;
+    }
+    section{
+        padding: 45px 0;
+    }
+    section.portfolio {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .card_text-name{
+        font-size: .8rem;
+        font-weight: 500;
+    }
+    .box_port{
+        height: 300px !important;
+    }
+    .view_btn{
+        padding: .35rem .5rem;
+    }
+    section .title{
+        font-size: 24px;
+    }
+    section .title::after{
+        font-size: 14px;
+    }
+} 
