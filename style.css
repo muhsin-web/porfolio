@@ -746,7 +746,13 @@ footer span a:hover{
    div.sub-title{
         word-wrap: break-word;
     }
-    
+    .card_text-name{
+        font-size: .85rem;
+        font-weight: 500;
+    }
+    .view_btn{
+        padding: .35rem .4rem;
+    }
 }
 
 @media screen and (max-width: 270px){
@@ -760,16 +766,11 @@ footer span a:hover{
         padding-left: 7px;
         padding-right: 7px;
     }
-    .card_text-name{
-        font-size: .8rem;
-        font-weight: 500;
-    }
+
     .box_port{
         height: 300px !important;
     }
-    .view_btn{
-        padding: .35rem .5rem;
-    }
+
     section .title{
         font-size: 24px;
     }
