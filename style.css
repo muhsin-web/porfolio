@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Exo:wght@300&display=swap');
 
 :root{
     --primary-color: rgb(37, 127, 216);
@@ -34,10 +35,9 @@ html{
     opacity: 1;
     pointer-events: auto;
 }
-/* body{
-    width: 100%;
-    overflow-x: hidden;
-} */
+body{
+    font-family: 'Exo', sans-serif !important;
+}
 /* NAV STYLIUNG */
 .max-width{
     max-width: 1100px;
@@ -48,7 +48,8 @@ html{
     position: fixed;
     width: 100%;
     /* background-color: var(--primary-color); */
-    font-family: sans-serif;
+    font-family: 'Exo', sans-serif;
+
     padding: 30px 0;
     transition: all .3s ease;
     z-index: 999;
@@ -108,7 +109,6 @@ html{
     height: 100vh;
     color: #fff;
     max-height: 100vh;
-    font-family: sans-serif;
     min-width: 100%;
 }
 .home .max-width{
@@ -154,12 +154,10 @@ section{
     overflow-x: hidden;
     width: 100% !important;
 }
-.about, .services, .skills, .contact, footer{
-    font-family: sans-serif;
-}
+/* .about, .services, .skills, .contact, footer{
+} */
 section .title{
     position: relative;
-    font-family: sans-serif;
     margin-bottom: 60px;
     text-align: center;
     font-size: 40px;
@@ -407,7 +405,6 @@ section .title::after{
 }
 
 section.portfolio{
-    font-family: 'ubuntu', sans-serif;
     padding: 70px 0;
 }
 
@@ -548,7 +545,6 @@ section.portfolio{
     outline: none;
     border: 1px solid lightgrey;
     font-size: 17px;
-    font-family: sans-serif;
     padding-left: 10px;
 }
 .contact .right form .textarea textarea{
@@ -694,6 +690,10 @@ footer span a:hover{
 
 
 @media (max-width: 690px) {
+    .card_text-name{
+        font-size: .85rem;
+        font-weight: 500;
+    }
     .max-width{
         padding: 0 25px;
     }
@@ -715,7 +715,7 @@ footer span a:hover{
         padding-right:  30px;
     }
     .box_port{
-        height: 490px !important;
+        height: 380px !important;
     }
 }
 
@@ -746,10 +746,7 @@ footer span a:hover{
    div.sub-title{
         word-wrap: break-word;
     }
-    .card_text-name{
-        font-size: .85rem;
-        font-weight: 500;
-    }
+
     .view_btn{
         padding: .35rem .4rem;
     }
@@ -761,7 +758,7 @@ footer span a:hover{
     }
 }
 
-@media screen and (max-width: 270px){
+@media screen and (max-width: 320px){
     body{
         font-size: 14px;
     }
@@ -771,5 +768,11 @@ footer span a:hover{
     section.portfolio {
         padding-left: 7px;
         padding-right: 7px;
+    }
+    section .title{
+        font-size: 24px;
+    }
+    section .title::after{
+        font-size: 12px;
     }
 } 
