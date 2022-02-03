@@ -547,6 +547,9 @@ div.portfolio{
     font-size: 17px;
     padding-left: 10px;
 }
+.contact .right form .field input, .contact .right form .textarea textarea, .contact .right form .fields{
+    outline: none;
+}
 .contact .right form .textarea textarea{
     width: 100%;
     height: 100%;
