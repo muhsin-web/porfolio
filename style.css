@@ -404,7 +404,7 @@ section .title::after{
     background: var(--primary-color);
 }
 
-section.portfolio{
+div.portfolio{
     padding: 70px 0;
 }
 
@@ -453,7 +453,7 @@ section.portfolio{
     text-align: center;
 }
 .card_text-name{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 .view_btn{
@@ -688,6 +688,14 @@ footer span a:hover{
     }
 }
 
+@media (max-width: 714px){
+    .max-width{
+        max-width: 670px;
+    }
+    span.card_text-name{
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 690px) {
     .card_text-name{
@@ -718,6 +726,7 @@ footer span a:hover{
         height: 380px !important;
     }
 }
+
 
 
 @media (max-width: 500px){
